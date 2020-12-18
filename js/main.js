@@ -19,7 +19,7 @@ const displayCorrectAns = () => {
         let secondNumBox = document.getElementById('second-num');
         let firstNum = Number.parseInt(firstNumBox.textContent);
         let secondNum = Number.parseInt(secondNumBox.textContent);
-        let answer = firstNum * secondNum;
+        let answer = firstNum + secondNum;
         
         if (e.code === 'Enter') {
             console.log(userAnswer.value);
@@ -53,7 +53,7 @@ const displayIncorrect = () => {
     let secondNumBox = document.getElementById('second-num');
     let firstNum = Number.parseInt(firstNumBox.textContent);
     let secondNum = Number.parseInt(secondNumBox.textContent);
-    let answer = firstNum * secondNum;
+    let answer = firstNum + secondNum;
     explanationBox.textContent = `The correct answer is ${answer}`;
 }
 
@@ -90,9 +90,9 @@ const clickEnter = () => {
         let secondNumBox = document.getElementById('second-num');
         let firstNum = Number.parseInt(firstNumBox.textContent);
         let secondNum = Number.parseInt(secondNumBox.textContent);
-        let answer = firstNum * secondNum;
+        let answer = firstNum + secondNum;
 
-        if (userAnswer.value == answer) {
+        if (userAnswer.value === answer) {
                 
             clearExplanation();
             displayCorrect();
