@@ -92,7 +92,7 @@ const clickEnter = () => {
         let secondNum = Number.parseInt(secondNumBox.textContent);
         let answer = firstNum + secondNum;
 
-        if (userAnswer.value === answer) {
+        if (userAnswer.value == answer) {
                 
             clearExplanation();
             displayCorrect();
